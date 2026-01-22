@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothify - E-Commerce Clothing</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght,CRSV@300,1&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <div class="logo">Clothify</div>
+        <nav>
+            <a href="#" id="home-link">Home</a>
+            <a href="#" id="products-link">Products</a>
+            <a href="#" id="wishlist-link">Wishlist</a>
+            <a href="#" id="cart-link">Cart</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="search-section">
+            <input type="text" id="search-bar" placeholder="FIND THE BEST FITS YOU....">
+        </section>
+
+        <section id="filters-section">
+            <h3>Filters</h3>
+            <div class="filter-group">
+                <label>Size:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" class="filter-checkbox" data-filter="size" value="S"> S</label>
+                    <label><input type="checkbox" class="filter-checkbox" data-filter="size" value="M"> M</label>
+                    <label><input type="checkbox" class="filter-checkbox" data-filter="size" value="L"> L</label>
+                    <label><input type="checkbox" class="filter-checkbox" data-filter="size" value="XL"> XL</label>
+                </div>
+            </div>
+            <div class="filter-group">
+                <label>Color:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" class="filter-checkbox" data-filter="color" value="Red"> Red</label>
+                    <label><input type="checkbox" class="filter-checkbox" data-filter="color" value="Blue"> Blue</label>
+                    <label><input type="checkbox" class="filter-checkbox" data-filter="color" value="Black"> Black</label>
+                    <label><input type="checkbox" class="filter-checkbox" data-filter="color" value="White"> White</label>
+                </div>
+            </div>
+            <div class="filter-group">
+                <label>Style:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" class="filter-checkbox" data-filter="style" value="Casual"> Casual</label>
+                    <label><input type="checkbox" class="filter-checkbox" data-filter="style" value="Formal"> Formal</label>
+                    <label><input type="checkbox" class="filter-checkbox" data-filter="style" value="Sport"> Sport</label>
+                </div>
+            </div>
+            <div class="filter-group">
+                <label>Brand:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" class="filter-checkbox" data-filter="brand" value="Nike"> Nike</label>
+                    <label><input type="checkbox" class="filter-checkbox" data-filter="brand" value="Adidas"> Adidas</label>
+                    <label><input type="checkbox" class="filter-checkbox" data-filter="brand" value="Puma"> Puma</label>
+                </div>
+            </div>
+            <div class="filter-group">
+                <label>Price: <span id="price-value">$0 - $200</span></label>
+                <input type="range" id="price-slider" min="0" max="200" value="200">
+            </div>
+        </section>
+
+        <section id="products-section">
+            <h2>Products</h2>
+            <div id="product-grid" class="product-grid"></div>
+        </section>
+
+        <section id="product-detail" class="hidden">
+            <div id="detail-content"></div>
+            <button id="back-to-products">Back to Products</button>
+        </section>
+
+        <section id="wishlist-section" class="hidden">
+            <h2>Wishlist</h2>
+            <div id="wishlist-grid" class="product-grid"></div>
+        </section>
+
+        <section id="cart-section" class="hidden">
+            <h2>Cart</h2>
+            <div id="cart-items"></div>
+            <div id="cart-total">Total: $0</div>
+            <button id="checkout-btn">Checkout</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Clothify. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
