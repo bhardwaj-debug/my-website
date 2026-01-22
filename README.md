@@ -21,7 +21,7 @@ It is created as a **demo project** for learning, portfolio showcase, and freela
 ## 🛠️ Technologies Used
 
 - HTML5  
-- CSS3 (Flexbox & Grid)  
+- CSS
 - JavaScript (Vanilla JS)
 
 ---
